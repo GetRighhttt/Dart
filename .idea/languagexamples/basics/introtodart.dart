@@ -10,6 +10,9 @@
  *
  * AOT - ahead of time.
  * JIT - just in time.
+ *
+ * Dart is also type safe in general. Meaning you can't assign use string methods
+ * on integer values.
  */
 void main() {
 

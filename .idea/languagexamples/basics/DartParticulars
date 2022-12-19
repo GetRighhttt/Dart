@@ -1,0 +1,74 @@
+Dart has a lot of differences from many other languages so I decided to compile everything
+into one file, and reference them later on throughout the other examples.
+
+- SOUND SYSTEM -
+
+Dart uses a combination of static type check
+ - compile time -
+ and run time check
+ - run time -
+to ensure the code is type safe or not.
+
+This is referred to a sound type system. Dart won't allow the code to run into
+undefined states.
+
+Static type check is kind of like a local check to make sure the developer isn't
+creating any variables and rearranging their types.
+
+A run time check is more like a double check at compile time to ensure the validity
+of the code produced.
+
+If you want to avaoid static type checks and only check for run time, you declare a
+variable as "dynamic" type.
+
+- TYPE INFERENCE -
+
+In Dart, types are mandatory, however Dart encompasses something that newer langugaes have also
+started to incorporate into their languages and that is called type inference.
+
+Type inference is basically the language inferring the type of the variable based on what
+the return type of the variable is.
+
+We do this by using the "var" keyword. It can only be of that specific type for the rest of its
+life after that.
+
+- SOUND NULL SAFETY -
+
+Nulls are an essential part of all programming languages of the modern era.
+In Dart, variables cannot contain null values unless it is explicity stated that they can.
+So data can either be nullable or non-nullable, but never both. This is retained at runtime,
+and this topic is very important.
+
+- COMPILERS -
+
+Dart uses a variety of compilers to run its language.
+
+Dart uses different compilers for different jobs. For phones and desktops, Dart usually uses a
+JUST IN TIME compiler and an AHEAD OF TIME compiler. On the web, Dart uses javascript compilers.
+
+- JIT -
+
+The recommended approach for a compiler to run Dart code during the development phase is the
+JUST IN TIME or JIT compiler. This approach compiles just the amount of code that it needs. It also
+does not recompile code and only recompiles code that changes. This allows for "hot reloads", or when
+you modify a widget in Flutter, the app will automatically adjust. This is because of JIT compilation.
+
+It's not the best or the most optimal approach. It doesn't transform dart code into machine code but
+rather into an intermediary language for faster development cycles. Also, the user only cares how the
+application runs on its device after it has been constructed, so JIT might be non-essential for some
+users.
+
+- AOT -
+
+The recommended approach for when the user wants the appto start as fast as possible and to run fast
+throughout the enitrety of its life, also doesn't need hot reloads, or fast debugging features,
+is when the AHEAD OF TIME compiler comes into play.
+
+It compiles source code into machine code, and does this ahead of time before the compiler runs the
+code overall. This is essentially what makes Dart such a fast language to run. It also makes sure the build
+is the best and most optimal.
+
+- WEB -
+
+For web development, dart also has its group of compilers that act very similar to
+JIT AND AOT but they are called Dat Development Compiler and the Dart to JavaScript Compiler.

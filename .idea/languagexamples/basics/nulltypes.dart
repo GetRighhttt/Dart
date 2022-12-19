@@ -1,6 +1,8 @@
 /**
  * Null in programming is basically when the variable doesn't have a reference
- * in memory.
+ * in memory, and/or doesn't hold anytihng.
+ *
+ * "The million dollar mistake".
  *
  * Historically, returning a null value causes a lot of errors, and most older
  * programming languages did not have nullable - able to be null data types
