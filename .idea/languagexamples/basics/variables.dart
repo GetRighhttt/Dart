@@ -6,6 +6,16 @@ import 'dart:core';
 import 'dart:io';
 /**
  * Here is how we can manage data in dart with declaring variables.
+ *
+ * Dart has 4 main types of variables:
+ * Top-Level, Static, instance, local and this matters where you declare them.
+ *
+ * Top-Level = global. Static = tied to object or class. Instance = fields
+ * or properties of classes. Local = variables that only have a local scope in
+ * a method or function.
+ *
+ * When variables by default have no value assigned to them, Dart automatically
+ * assigns the value of null to that variable.
  */
 
 void main() {
@@ -25,9 +35,6 @@ void main() {
    * and is basically saying that this variable cannot be changed.
    *
    * var is mutable whereas final is immutable.
-   *
-   * Also, if we declare a variable and do not initialize it, it will be declared
-   * as dynamic.
    */
 
   var firstName = "Stefan";  // statically typed defined.

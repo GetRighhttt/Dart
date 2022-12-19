@@ -15,6 +15,7 @@
 
 void main() {
   /*
-  In Dart, we cna declare anything as null.
+  In Dart, we cna declare anything as null, and this is done by postfixing values
+  with a question mark '?' at the end of their declaration.
    */
 }

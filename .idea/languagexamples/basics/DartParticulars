@@ -1,13 +1,16 @@
 Dart has a lot of differences from many other languages so I decided to compile everything
 into one file, and reference them later on throughout the other examples.
 
+ALSO, Dart is an Object Oriented Programming Language! Everything is essentially an instance of a class.
+Obejcts are instances of classes.
+
 - SOUND SYSTEM -
 
 Dart uses a combination of static type check
  - compile time -
  and run time check
  - run time -
-to ensure the code is type safe or not.
+to ensure the code is type safe and cannot evaluate into an unknown state.
 
 This is referred to a sound type system. Dart won't allow the code to run into
 undefined states.
@@ -58,6 +61,8 @@ rather into an intermediary language for faster development cycles. Also, the us
 application runs on its device after it has been constructed, so JIT might be non-essential for some
 users.
 
+"Aids developers"
+
 - AOT -
 
 The recommended approach for when the user wants the appto start as fast as possible and to run fast
@@ -67,6 +72,8 @@ is when the AHEAD OF TIME compiler comes into play.
 It compiles source code into machine code, and does this ahead of time before the compiler runs the
 code overall. This is essentially what makes Dart such a fast language to run. It also makes sure the build
 is the best and most optimal.
+
+"Aids users"
 
 - WEB -
 
