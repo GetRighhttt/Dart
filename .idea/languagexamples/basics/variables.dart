@@ -78,18 +78,6 @@ void main() {
   String? lName = stdin.readLineSync();
   print("My name is $name $lName");
 
-  /**
-   * Booleans can either be true or false and are used a lot in terms of
-   * conditional statements and loops.
-   *
-   * Dynamics are also data types that we can use where we can declare pretty
-   * much an;ything.
-   *
-   * We can also change the value of a variable with dynamic typing.
-   */
-  dynamic thisExample = 5;
-  thisExample = "Name";
-  thisExample = 300.00
 
   /*
   Output:
