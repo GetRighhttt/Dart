@@ -20,6 +20,14 @@ void main() {
    *
    * Also, ther are no longs or floats in Dart. Only doubles and integers, which
    * makes the language faster in my opinion and easier to work with.
+   *
+   * "final" keyword is what is recommended when working with flutter
+   * and is basically saying that this variable cannot be changed.
+   *
+   * var is mutable whereas final is immutable.
+   *
+   * Also, if we declare a variable and do not initialize it, it will be declared
+   * as dynamic.
    */
 
   var firstName = "Stefan";  // statically typed defined.
@@ -35,6 +43,7 @@ void main() {
    * parent class to all nubmers in Dart.
    *
    * num however is not used very often.
+   *
    */
   var age = 30;
   var thisAge = 45;
