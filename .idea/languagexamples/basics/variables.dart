@@ -41,7 +41,7 @@ void main() {
    * var is mutable whereas final is immutable.
    */
 
-  var firstName = "Stefan";  // statically typed defined.
+  var firstName = "Stefan"; // statically typed defined.
   String lastName = "Bayne"; // type inference, and immutable, meaing cannnot be changed.
 
   print(firstName + " " + lastName);
@@ -66,9 +66,9 @@ void main() {
    * Here is how we can write lines to the console, and read in lines from
    * the console.
    *
-   * This kind of goes into how strings are going to look but, we can go over 
+   * This kind of goes into how strings are going to look but, we can go over
    * some of it now...
-   * 
+   *
    * ReadlineSync is nullable so we have to declare the string with a question
    * mark, but we can discuss that further later on.
    */
@@ -96,11 +96,11 @@ void main() {
 
   Stefan Bayne
   6
-75
-What is your first name?
-Bob
-What is your last name?
-Myers
-My name is Bob Myers
+  75
+  What is your first name?
+  Bob
+  What is your last name?
+  Myers
+  My name is Bob Myers
    */
 }
