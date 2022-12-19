@@ -34,6 +34,10 @@ void main() {
    * "final" keyword is what is recommended when working with flutter
    * and is basically saying that this variable cannot be changed.
    *
+   * "const" is the most restrictive variable declaration and assigns a
+   * constant value. Constant values can also be used for object declarations.
+   * Const also can be used for values whereas "final" cannot.
+   *
    * var is mutable whereas final is immutable.
    */
 
