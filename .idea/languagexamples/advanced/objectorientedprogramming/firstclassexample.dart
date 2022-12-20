@@ -7,6 +7,7 @@
  * or describe what the object has or does.
  */
 class Person {
+  // fields
   String? name, sex, job;
   int? age;
 
