@@ -22,8 +22,8 @@ void main() {
 
   thisFunction(); // function call
 
-  // return statement
-  myNewFunction() {
+  // return statement with String return type
+  String myNewFunction() {
     return "This is a function with a return statement.";
   }
 
@@ -77,5 +77,18 @@ void main() {
   /**
    * we can also pass in default parameters but that isn't really common
    * practice.
+   *
    */
+  print(newNumber());
+}
+
+// this is a top-level or global method that can be accessed from anywhere
+int newNumber() {
+  return 10;
+}
+
+// this cannot be used and will have no return type.
+// we usually use void types in Dart when we want to put functions in this function
+void noReturn() {
+  print("Void means that there is not a return type.");
 }
