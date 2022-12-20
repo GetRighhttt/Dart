@@ -45,4 +45,39 @@ void main() {
   // (5, 8, 10)
   // (30, 50, 80, 100)
 
+  /**
+   * This is a feature in Dart that we use when building flutter applications
+   * a lot of time.
+   *
+   * We can use if statements within list similar to ternary operators in
+   * SwiftUI for views.
+   */
+  bool isOn = false;
+  <String>[
+    'This is fake content.',
+    if(isOn) 'Sign in' else 'Sign out'
+  ];
+
+  /**
+   * we can also use for loops with collections in Dart.
+   */
+  final x = <String>[
+    for(int i = 0; i <5; i++) i.toString(),
+    for(final number in [1,2,3]) number.toString()
+  ];
+  print(x); // [0, 1, 2, 3, 4, 1, 2, 3]
+
+  /**
+   * Lastly, we can use the spread ... operator in Dart like we can in other
+   * languages as well.
+   *
+   * This will combine the list together.
+   */
+  final list1 = ['yo', 'whats up'];
+  final list2 = ['nothing', 'much'];
+  final combinedList = <String>[
+    ...list1,
+  ...list2
+  ];
+print(combinedList); // [yo, whats up, nothing, much]
 }
