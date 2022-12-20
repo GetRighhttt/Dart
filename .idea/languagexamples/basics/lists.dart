@@ -66,4 +66,24 @@ void main() {
   newestEmptyList.remove(20);
   print(newestEmptyList);
 
+  // clears the entire list
+  newestEmptyList.clear();
+  print(newestEmptyList);
+
+  /*
+  Output:
+
+  [1, 2, 3, 4, 5]
+  4
+  [102, 2, 3, 4, 100]
+  []
+  [21, 22, 23, 24, 25, 26]
+  [1, 2, 3, 4, 5, 6]
+  [1, 2, 3, 20, 4, 5, 6]
+  [1, 2, 3, 20, 4, 5, 30, 40, 50, 60, 6]
+  [1, 2, 3, 20, 4, 5, 30, 40, 50, 60]
+  [2, 3, 20, 4, 5, 30, 40, 50, 60]
+  [2, 3, 4, 5, 30, 40, 50, 60]
+  []
+   */
 }
