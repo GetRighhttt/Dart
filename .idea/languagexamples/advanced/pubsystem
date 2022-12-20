@@ -1,0 +1,11 @@
+The Pub Package System allows us to add dependenciesto your project and make your life easier by utitlizing other
+people's code.
+
+There are two types of dependencies in which you are probably going to add to your projects at some point
+in time when working with Dart.
+dev_dependencies, and regular dependencies.
+
+dependencies are packaged into your application. They are built for publishing.
+
+dev_dependencies are not packaged into your application. They are there essentially to make the developers life a little
+bit easier when they are developing code.
