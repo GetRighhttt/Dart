@@ -18,4 +18,10 @@ void main() {
   In Dart, we cna declare anything as null, and this is done by postfixing values
   with a question mark '?' at the end of their declaration.
    */
+  String? possible = "Impossible";
+  print(possible.length); // prints 10
+
+  // ! declares it as not null. will return an error because nothing is there
+  String? yesOrNo;
+  print(yesOrNo!);
 }
