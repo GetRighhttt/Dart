@@ -54,6 +54,8 @@ class NewPerson {
 void main() {
   // here is how we instantiate or create a variable of the class
   var newPerson = Person("Stefan", "Male", "Enginner", 27);
+
+  // second class example where we dont use a constructor
   var secondPerson = NewPerson();
   secondPerson.addData("Ayesha", "Female", "HR", 25);
 
