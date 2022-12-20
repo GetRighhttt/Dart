@@ -70,6 +70,10 @@ void main() {
   newestEmptyList.clear();
   print(newestEmptyList);
 
+  // we can also declare a mixed list
+  var mixedList = [1,2,3, "Stefan", "Yeesh"];
+  print(mixedList);
+
   /*
   Output:
 
@@ -85,5 +89,6 @@ void main() {
   [2, 3, 20, 4, 5, 30, 40, 50, 60]
   [2, 3, 4, 5, 30, 40, 50, 60]
   []
+  [1, 2, 3, Stefan, Yeesh]
    */
 }
