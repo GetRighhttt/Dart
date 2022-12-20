@@ -39,8 +39,10 @@ void main() {
   Set<int> newSet = {3, 5, 8, 10};
   print(newSet.skip(2)); // skips first two elements
   print(newSet.where((element) => element >= 5));
+  print(newSet.map((e) => e * 10));
 
   // (8, 10)
   // (5, 8, 10)
+  // (30, 50, 80, 100)
 
 }
