@@ -12,7 +12,7 @@
 void main() {
   // for loop
   var num = 5;
-  for (var i = num; i <= 10; i++) {
+  for (var i = num; i <= 20; i++) {
     print(i);
   }
 
@@ -32,12 +32,22 @@ void main() {
 /*
   output:
 
-  5
-  6
-  7
-  8
-  9
-  10
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
   Stefan
   Bob
   Ayesha
