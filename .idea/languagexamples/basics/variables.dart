@@ -76,7 +76,7 @@ void main() {
   String? name = stdin.readLineSync();
   stdout.writeln("What is your last name?");
   String? lName = stdin.readLineSync();
-  print("My name is $name $lName");
+  print("My name is $name $lName"); // string interpolation
 
 
   /*
