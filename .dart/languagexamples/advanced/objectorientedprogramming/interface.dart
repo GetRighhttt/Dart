@@ -21,5 +21,6 @@ class RegularClass {
  * Its called like an implicit interface in Dart which every class has
  */
 class OtherClass implements RegularClass {
-
+// TODO: this is where we can get all the getters of the class from the class
+// TODO: that we are implementing.
 }
