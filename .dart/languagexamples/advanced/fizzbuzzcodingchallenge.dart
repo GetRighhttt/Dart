@@ -4,7 +4,11 @@
  *
  * Fizzbuzz is a typical coding interview question that basically checks to see
  * if the person being interviewed can understand basic logic.
+ *
+ * Abstract classes cannot be instantiated but can be inherited. IN some cases,
+ * this is the preferred approach.
  */
+
 void main() {
   int num = 1;
 
