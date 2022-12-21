@@ -4,6 +4,9 @@
  *
  * It's best practice in Dart code to only implement abstract classes for the
  * most part.
+ *
+ *  * Abstract classes cannot be instantiated but can be inherited. IN some cases,
+ * this is the preferred approach.
  */
 class RegularClass {
   final int myField;
