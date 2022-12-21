@@ -30,12 +30,28 @@ class B {
    */
   B(int a, int b) : this.c = c; // initializer list
   {
-    this.a = a;
-    this.b = b;
+  this.a = a;
+  this.b = b;
   }
 
+  /**
+   * we can use named constructors to have multiple constructors in a class.
+   *
+   * this is usually used when we are trying to parse JSON data in one of our classes.
+   */
+  B.zero()
+      : a = 0,
+        b = 0;
+
+  // B.fromJson({required Map<String, int> json})
+  //     : x = json['x']!,
+  //       y = json['y']!;
 /**
  * we also could have just used this.a, this.b, this.c
  * and be done with the constructor.
+ *
+ * we can also redirect constructors to other constructors.
  */
+B.zeroX({required int y}): this(x:0, y:y);
+B.zeroY({required int x}): this(x:x, y:0);
 }
