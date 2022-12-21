@@ -1,6 +1,9 @@
 /**
  * In Dart, we can use the implements keyword to implement classes as if they
  * were interfaces.
+ *
+ * It's best practice in Dart code to only implement abstract classes for the
+ * most part.
  */
 class RegularClass {
   final int myField;
