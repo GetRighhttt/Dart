@@ -13,17 +13,6 @@ class B {
   final int c;
 
   /**
-   * Constructors have to have the same name as the class and also they CAN have
-   * a body however this is not always necessary and a lot of times you want
-   * really use the body. There are other ways to incorporate necessary initialization
-   * without using a constructor body. Constructors also do not have return types.
-   *
-   * static variables cannot be set inside the constructor.
-   *
-   * this keyword is used in constructors to set the fields of the class
-   *
-   * with final variables we have to use the initializer list after the parameters
-   * in order to set the value. final variables cannot be set in the constructor.
    *
    * we actually could just use the initializer list to set all of your fields and
    * get rid of the body which I have shown in other files in this directory.
@@ -35,6 +24,18 @@ class B {
   }
 
   /**
+   *   * Constructors have to have the same name as the class and also they CAN have
+   * a body however this is not always necessary and a lot of times you want
+   * really use the body. There are other ways to incorporate necessary initialization
+   * without using a constructor body. Constructors also do not have return types.
+   *
+   * static variables cannot be set inside the constructor.
+   *
+   * this keyword is used in constructors to set the fields of the class
+   *
+   * with final variables we have to use the initializer list after the parameters
+   * in order to set the value. final variables cannot be set in the constructor.
+   *
    * we can use named constructors to have multiple constructors in a class.
    *
    * this is usually used when we are trying to parse JSON data in one of our classes.
