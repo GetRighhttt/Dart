@@ -1,3 +1,7 @@
+`Concurrency` - the ability of a system to handle multiple tasks as the same time.
+`Asychronous` - not sychronous, or not at the same time; processes happening independently of other processes.
+`Synchronous` - happening at the same time; processes happening that depend on other processes to finish first.
+
 All Dart code runs on an `isolate`, however most dart code runs on only one main `isolate` unless otherwise created because Dart is a `single-threaded language`.
 An `isolate` is compared to `threads` or `processes`, however each `isolate` has its own `memory` and `single-thread` that runs its own `event loop`.
 That one core `isolate` is usually called `main`, hence `Flutter` apps starting with `void main() {}` methods, and also these `isolates` are literally isolated from one another, and cannot access each other's properties.
