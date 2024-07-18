@@ -1,0 +1,11 @@
+All Dart code runs on an `isolate`, however most dart code runs on only one main `isolate` unless otherwise created because Dart is a `single-threaded language`.
+An `isolate` is compared to `threads` or `processes`, however each `isolate` has its own `memory` and `single-thread` that runs its own `event loop`.
+That one core `isolate` is usually called `main`, hence `Flutter` apps starting with `void main() {}` methods, and also these `isolates` are literally isolated from one another, and cannot access each other's properties.
+These `isolates` can only work together by passing messages back and forth.
+With each Dart code having its own `isolate`, multiple independent processes can happen at one time, however these processes can be blocked inside of their `isolates` if one of those processes takes a long time to finish.
+In Dart, each thread is in its own `isolate` with its own `memory` and it just process `events` by way of the `event loop`.
+
+`Event Loops` are apart of Dart's runtime, and are responsible essentially for everything that occurs in Dart.
+These loops are always running and when there isn't an event to process, it essentially just waits for the next event, however it is always running and processing information.
+`Event Loops` literally process events linearly, or in order in which the events were created and called.
+So all of the `apis` that exists within dart for asychronous code was created in order to tell the `Event Loop` when to run their code.
