@@ -5,7 +5,9 @@
 Dart is `single-threaded` by default so all the processes run in a single sequence.
 We can use `concurrency` to achieve `asychrony` without having to add multiple cores and threads like we would need for `Parallelism`.
 
-All Dart code runs on an `isolate`, however most dart code runs on only one main `isolate` unless otherwise created because Dart is a `single-threaded language`.
+`Microtask Queue` - a special queue that runs before any asychronous code in Dart.
+
+All Dart code runs on an `isolate`, however most dart code runs on only one main `isolate` unless otherwise created because Dart is a `single-threaded language`, which allows for Parallelism - single sequence.
 An `isolate` is compared to `threads` or `processes`, however each `isolate` has its own `memory` and `single-thread` that runs its own `event loop`.
 That one core `isolate` is usually called `main`, hence `Flutter` apps starting with `void main() {}` methods, and also these `isolates` are literally isolated from one another, and cannot access each other's properties.
 These `isolates` can only work together by passing messages back and forth.
