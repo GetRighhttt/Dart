@@ -42,7 +42,6 @@ void main() {
     Future.microtask(() => print('H - Microtask'));
     print('I');
   });
-}
 
 /*
 Output:
@@ -50,6 +49,7 @@ Output:
 1 - sqrt(4) -> 2.0
 3 - sqrt(16) -> 4.0
 5 - sqrt(36) -> 6.0
+(1, 2, 3, 4, 5, 6, 7, 8, 9, 10) // Iterable
 Starting Future Calculation:
 A
 B
@@ -67,3 +67,25 @@ G
 2 - sqrt(8) -> 2.8284271247461903 - Delayed Future
 
 */
+
+/**
+ * Iterable - much more abstract, lazily constructed - only constructed when an
+ * element is accessed. Gets traversed with help of an interator. Doesn't need to
+ * have a specifed length. Accessing an element will regenerate ALL elements
+ * until the specified one is found. Better for Synchronous operations because
+ * the number of values isn't specified.
+ *
+ * List - Special non-lazy iterable. Constructed as soon as it is called. Has
+ * defined size and items are stored at a specific index. Less memory intensive.
+ * Better for Asynchronous operations becase the number of values expected is
+ * defined.
+ */
+  print(show(10));
+}
+
+Iterable<int> show(int n) sync* {
+  for (var i = 1; i <= n; i++) {
+    // yield used to wait for iterable results
+    yield i;
+  }
+}
