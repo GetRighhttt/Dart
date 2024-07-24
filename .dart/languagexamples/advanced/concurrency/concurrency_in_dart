@@ -2,7 +2,8 @@
 `Asychronous` - not sychronous, or not at the same time; processes happening independently of other processes.
 `Synchronous` - happening at the same time; processes happening that depend on other processes to finish first.
 
-Dart is `single-threaded` by default so all the processes run in a single sequence.
+Dart is `single-threaded` by default so all the processes run in a single sequence. This thread is known as the `Mutator Thread`, and a `Helper Thread` comes periodically to handle garbage collection.
+All `isolate` related code happens on the mutator thread while `isolate` built in operations happen on other threads.
 We can use `concurrency` to achieve `asychrony` without having to add multiple cores and threads like we would need for `Parallelism`.
 
 `Microtask Queue` - a special queue that runs before any asychronous code in Dart.
