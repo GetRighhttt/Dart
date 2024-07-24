@@ -4,7 +4,7 @@ Example showing single-threaded code without synchronous operations..
 Sychronous - each step happens in sequence or one after the other; code
 happens one by one after each other.
 Isolate - component in which specializes in running all of the Dart code runs.
-Event Loop processes events sychronously regardless if one event is asynchronous.
+Event Loop - processes events sychronously regardless if one event is asynchronous.
 Dart can handle Parallelism by creating multiple Isolates but it comes at a cost
 of using a ton of resources.
 */
@@ -43,3 +43,27 @@ void main() {
     print('I');
   });
 }
+
+/*
+Output:
+
+1 - sqrt(4) -> 2.0
+3 - sqrt(16) -> 4.0
+5 - sqrt(36) -> 6.0
+Starting Future Calculation:
+A
+B
+C
+D
+I
+H - Microtask
+H - Microtask
+H - Microtask
+H - Microtask
+E
+F
+G
+4 - sqrt(25) -> 5.0 - Delayed Future
+2 - sqrt(8) -> 2.8284271247461903 - Delayed Future
+
+*/
