@@ -83,6 +83,7 @@ G
   print(show(10));
 }
 
+// sync* used to denote a synchronous operation
 Iterable<int> show(int n) sync* {
   for (var i = 1; i <= n; i++) {
     // yield used to wait for iterable results
